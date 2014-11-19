@@ -315,6 +315,8 @@ rake db:create db:migrate RAILS_ENV="production"
 
 We also need to set a production secret in `config/secrets.yml`. For our little "Hello World" application, we'll just replace `<%= ENV["SECRET_KEY_BASE"] %>` with a static value. Generally, you want to keep secret keys out of version control and store them in the environment.
 
+Please add a couple of lines instructing students to "mkdir ~/app-name/tmp" so they can restart their app once they save the secret production key.  To restart, enter "~/app-name/tmp/restart.txt"
+
 You can read more about setting environment variables in Phusion Passenger [here](https://www.phusionpassenger.com/documentation/Users%20guide%20Apache.html#env_vars_passenger_apps).
 
 ## Addenda
